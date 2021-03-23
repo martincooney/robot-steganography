@@ -18,6 +18,12 @@ python motion_steganography.py
 It hides a message in a motion file for the robot Baxter, using a very common and simple steganography method (LSB with ASCII).
 Once you get the idea, feel free to tape your own motions for Baxter and change the default settings, like the source/target filenames and the hidden message, specified at the top of the code.
 
+analyzeSoundOffsets.py:
+This shows an example of steganalysis for a message "SOS" encoded into our Baxter robot's speech delays using "pseudo"-Morse code.
+The speech onsets were automatically detected using a microphone and these data are processed.
+This example shows (1) detecting if a speech sample had a hidden message or not and (2) decoding the message.
+Data are stored in audiolog_hidden.txt and audiolog_normal.txt
+
 examples:
 This folder contains examples of WAV files and PNG images which have messages hidden in them (LSB/ASCII). There is much code on Google that can do this.
 
